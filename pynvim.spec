@@ -4,7 +4,7 @@
 #
 Name     : pynvim
 Version  : 0.3.2
-Release  : 1
+Release  : 2
 URL      : https://github.com/neovim/pynvim/archive/0.3.2.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/0.3.2.tar.gz
 Summary  : No detailed summary available
@@ -13,8 +13,10 @@ License  : Apache-2.0
 Requires: pynvim-license = %{version}-%{release}
 Requires: pynvim-python = %{version}-%{release}
 Requires: pynvim-python3 = %{version}-%{release}
+Requires: greenlet
 Requires: msgpack
 BuildRequires : buildreq-distutils3
+BuildRequires : greenlet
 BuildRequires : msgpack
 BuildRequires : pluggy
 BuildRequires : py-python
@@ -63,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564606139
+export SOURCE_DATE_EPOCH=1564607197
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
