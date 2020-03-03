@@ -4,10 +4,10 @@
 #
 Name     : pynvim
 Version  : 0.4.0
-Release  : 5
+Release  : 6
 URL      : https://github.com/neovim/pynvim/archive/0.4.0/pynvim-0.4.0.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/0.4.0/pynvim-0.4.0.tar.gz
-Summary  : No detailed summary available
+Summary  : Python client to neovim
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: pynvim-license = %{version}-%{release}
@@ -55,6 +55,7 @@ python components for the pynvim package.
 Summary: python3 components for the pynvim package.
 Group: Default
 Requires: python3-core
+Provides: pypi(pynvim)
 
 %description python3
 python3 components for the pynvim package.
@@ -69,7 +70,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579132122
+export SOURCE_DATE_EPOCH=1583208121
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
