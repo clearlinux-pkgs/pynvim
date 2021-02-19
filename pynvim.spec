@@ -4,7 +4,7 @@
 #
 Name     : pynvim
 Version  : 0.4.2
-Release  : 12
+Release  : 13
 URL      : https://github.com/neovim/pynvim/archive/0.4.2/pynvim-0.4.2.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/0.4.2/pynvim-0.4.2.tar.gz
 Summary  : Python client to neovim
