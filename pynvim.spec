@@ -4,7 +4,7 @@
 #
 Name     : pynvim
 Version  : 0.4.3
-Release  : 21
+Release  : 22
 URL      : https://github.com/neovim/pynvim/archive/0.4.3/pynvim-0.4.3.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/0.4.3/pynvim-0.4.3.tar.gz
 Summary  : Python client to neovim
