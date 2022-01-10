@@ -4,7 +4,7 @@
 #
 Name     : pynvim
 Version  : 0.4.3
-Release  : 22
+Release  : 23
 URL      : https://github.com/neovim/pynvim/archive/0.4.3/pynvim-0.4.3.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/0.4.3/pynvim-0.4.3.tar.gz
 Summary  : Python client to neovim
@@ -13,18 +13,16 @@ License  : Apache-2.0
 Requires: pynvim-license = %{version}-%{release}
 Requires: pynvim-python = %{version}-%{release}
 Requires: pynvim-python3 = %{version}-%{release}
-Requires: greenlet
-Requires: msgpack
-Requires: pynvim
+Requires: pypi(greenlet)
+Requires: pypi(msgpack)
 BuildRequires : buildreq-distutils3
-BuildRequires : greenlet
-BuildRequires : msgpack
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pynvim
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(msgpack)
+BuildRequires : pypi(py)
+BuildRequires : pypi(pynvim)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 Pynvim: Python client to [Neovim](https://github.com/neovim/neovim)
@@ -54,6 +52,7 @@ Requires: python3-core
 Provides: pypi(pynvim)
 Requires: pypi(greenlet)
 Requires: pypi(msgpack)
+Requires: pypi(pynvim)
 
 %description python3
 python3 components for the pynvim package.
@@ -68,15 +67,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615418686
+export SOURCE_DATE_EPOCH=1641836866
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
