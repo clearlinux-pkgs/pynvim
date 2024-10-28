@@ -7,7 +7,7 @@
 #
 Name     : pynvim
 Version  : master
-Release  : 26
+Release  : 27
 URL      : https://github.com/neovim/pynvim/archive/refs/heads/master.tar.gz
 Source0  : https://github.com/neovim/pynvim/archive/refs/heads/master.tar.gz
 Summary  : Python client to neovim
